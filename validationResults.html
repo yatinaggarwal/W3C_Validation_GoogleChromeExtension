@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W3C Validation Results</title>
+	<style>
+      	body {
+        	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        	font-size: 100%;
+        }
+        h1 {
+            font-size: 1.6em;
+            font-style: italic;
+        }
+        .errorMessage, .warningMessage {
+            border-width: 2px 2px 2px 15px;
+            border-style: solid;
+            border-radius: 0 5px 5px 0;
+            padding: 5px 10px;
+  		  	margin-bottom: 5px;
+      	}
+        .errorMessage {
+            border-color: #d33;
+        }
+        .warningMessage {
+            border-color: #fc0;
+        }
+      	.checked {
+            border-color: #ccc;
+  		  	text-decoration: line-through;
+      	}
+      	.checkMessage {
+            float: right;
+      		cursor: pointer;
+      	}
+        .errorHeading, .warningHeading {
+            font-size: 1em;
+            text-decoration: underline;
+        }
+      	.errorHead {
+    		font-weight: bold;
+    		border-radius: 5px;
+    		border: 1px solid #ccc;
+    		background-color: #ffcccc;
+    		margin-right: 5px;
+      	}
+      	.warningHead {
+    		font-weight: bold;
+    		border-radius: 5px;
+  		  	border: 1px solid #ccc;
+    		background-color: #ffffcc;
+    		margin-right: 5px;
+      	}
+        .errorDesc, .warningDesc {
+            font-weight: 500;
+        }
+        p {
+        	margin: 10px 0;
+        }
+      	.lineDesc {
+      		font-style: italic;
+      		text-decoration: underline;
+      		padding-left: 15px;
+      		color: blue;
+      	}
+      	.noErrors {
+      		font-weight: bold;
+      		background-color: #ccffcc;
+      		padding: 5px;
+      	}
+      	.withErrors {
+      		font-weight: bold;
+      		background-color: #ffffcc;
+      		padding: 5px;
+      	}
+    </style>
+	<script src="validationResults.js"></script>
+</head>
+<body>
+	<h1>Validation Results:</h1>
+	<div id="resultss"></div>
+</body>
+</html>

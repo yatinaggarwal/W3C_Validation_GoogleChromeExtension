@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W3C Validator</title>
+	<style>
+      	body {
+        	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        	font-size: 100%;
+            width: 400px;
+      	}
+        .runValidator {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+        .loader {
+        	height: 100px;
+        	background-image: url("loader.gif");
+        	background-size: 55px 55px;
+    		background-repeat: no-repeat;
+    		background-position: center;
+        }
+        .loaderDesc {
+            text-align: center;
+        }
+        .displayNone {
+            display: none;
+        }
+      	.errorMessage, .warningMessage {
+            border-width: 2px 2px 2px 15px;
+            border-style: solid;
+            border-radius: 0 5px 5px 0;
+            padding: 5px 10px;
+      		margin-bottom: 5px;
+      	}
+        .errorMessage {
+            border-color: #d33;
+        }
+        .warningMessage {
+            border-color: #fc0;
+        }
+      	.checked {
+            border-color: #ccc;
+      		text-decoration: line-through;
+      	}
+      	.checkMessage {
+            float: right;
+      		cursor: pointer;
+      	}
+        .errorHeading, .warningHeading {
+            font-size: 1em;
+            text-decoration: underline;
+        }
+      	.errorHead {
+      		font-weight: bold;
+      		border-radius: 5px;
+    		border: 1px solid #ccc;
+    		background-color: #ffcccc;
+    		margin-right: 5px;
+      	}
+      	.warningHead {
+      		font-weight: bold;
+      		border-radius: 5px;
+    		border: 1px solid #ccc;
+      		background-color: #ffffcc;
+      		margin-right: 5px;
+      	}
+      	p {
+        	margin: 10px 0;
+        }
+      	.lineDesc {
+      		font-style: italic;
+      		text-decoration: underline;
+      		padding-left: 15px;
+            color: blue;
+      	}
+      	.noErrors {
+      		font-weight: bold;
+      		background-color: #ccffcc;
+      		padding: 5px;
+      	}
+      	.withErrors {
+      		font-weight: bold;
+      		background-color: #ffffcc;
+      		padding: 5px;
+      	}
+    </style>
+	<script src="popup.js"></script>
+</head>
+<body>
+	<h1 class="runValidator">W3C Validation Results :</h1>
+    <div id="validationResult" class="loader">
+        <div id="loaderDesc" class="loaderDesc"><i>Fetching validation results, please wait....</i></div>
+        <div id="openNewTab" class="displayNone">
+            <a id="openNewTabLink" href="javascript:void(0)">Open results in new tab</a>
+        </div>
+        <div id="resultsWrapper">
+    		<div id="errorCount"></div>
+    		<div id="errors"></div>
+    		<div id="warnings"></div>
+    	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "W3C Validator",
+    "description": "This extension runs a w3c validator for the current page and show the results",
+    "version": "1.0",
+    "author": "Yatin Aggarwal",
+
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }],
+
+    "browser_action": {
+        "default_title": "W3C Validator",
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "https://validator.w3.org/nu/",
+        "<all_urls>"
+    ],
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}
